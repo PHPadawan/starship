@@ -1,2 +1,2 @@
-# starship
-My https://starship.rs config
+# Starship
+My https://starship.rs config.
