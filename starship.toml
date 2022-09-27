@@ -77,17 +77,6 @@ format = "[$output]($style) "
 style = "bold bg:red fg:white"
 when = "sudo -vn &>/dev/null"
 
-#[custom.warp]
-#command = '''
-#if [[ %? == 0 ]]; then
-#  echo "\e[31m;"
-#else
-#  echo ""
-#fi
-#'''
-#format = "$output "
-#when = 'if echo "$TERM_PROGRAM" | grep -iqF "warp"; then; exit 1; fi'
-
 [python]
 python_binary = "python3"
 format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
@@ -161,3 +150,14 @@ symbol = " "
 
 [spack]
 symbol = "🅢 "
+
+#[custom.warp]
+#command = '''
+#if [[ %? == 0 ]]; then
+#  echo "\e[31m;"
+#else
+#  echo ""
+#fi
+#'''
+#format = "$output "
+#when = 'if echo "$TERM_PROGRAM" | grep -iqF "warp"; then; exit 1; fi'
